@@ -1,0 +1,9 @@
+purse=dict()
+purse['money']=12
+purse['candy']=2
+purse['tissues']=13
+print(purse)
+purse['candy']=purse['candy']+6
+print(purse)
+jjj={'hi':5,'hello':7}
+print(jjj)
