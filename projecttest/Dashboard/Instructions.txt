@@ -1,7 +1,10 @@
-1)Run setup
-pip install -requirements.txt
+1) Run setup
+#For new user
+pip install -r requirements.txt
+#For Old User
+pip install -r prorequirements.txt
 
 2)Run python code in CMD
-streamlit run [_file_path_]
+streamlit run  file_path_name
 eg:
 	streamlit run E:\folder_1\folder_2\Dashboard.py

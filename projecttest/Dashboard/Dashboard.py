@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.express as px
 
 
-
+#def main
 #chart_title = input("Enter the title for chart")
 st.set_page_config(page_title="Environmental Parameters",page_icon=":bar_chart:",layout="wide")
 df=pd.read_excel('DATA - Collection and Analysis - (Rough data).XLSX',sheet_name='8 Days - 3 times',
@@ -37,7 +37,8 @@ def Line_plot2(Data,Parameter):
 
 
 #st.markdown("---")
-st.title("Chart")
+#Mian PLot
+st.title(":bar_chart:Dashboard")
 Plot_change= st.button(label="Bar Plot",help="To see in Bar Plot")
 Plot_change= st.button(label="Line Plot",help="To see in Line Plot")
 if Plot_change:
@@ -48,6 +49,7 @@ else:
 st.markdown("---")
 # per day readings plot
 
+#Subplots Dataframes
 Day_1=df[0:3]
 Day_2=df[3:6]
 Day_3=df[6:9]
@@ -57,7 +59,7 @@ Day_6=df[15:18]
 Day_7=df[18:21]
 Day_8=df[21:24]
 
-# Parameters
+# Parameters Sorting
 Temperature=df.Temperature
 Humidity=df.Humidity
 Moisture=df.Moisture
@@ -126,3 +128,15 @@ elif option2 == 'Pressure':
         Line_plot2(df, Pressure)
     else:
         Bar_Plot2(df, Pressure)
+
+st.table(df)
+
+# To hide all unwanted header,footer and Menu Option
+#hide_st_style="""
+#            <style>
+#            footer{visibility:hidden;}
+# header{visibility:hidden;}
+#            </style>
+#            """
+#st.markdown(hide_st_style, unsafe_allow_html= True)
+

@@ -1,0 +1,13 @@
+[theme]
+
+primaryColor = "#E694FF"
+
+backgroundColor = "#001728"
+
+#secondaryBackgroundColor = "#008388"
+#secondaryBackgroundColor = "#FFF"
+secondaryBackgroundColor = "#001728"
+
+textColor = "#FFF"
+
+font = "sans serif"
